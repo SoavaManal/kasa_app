@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import ErrorPage from "./Pages/ErrorPage";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Lodgings from "./Pages/Lodgings";
+import ErrorPage from "./Pages/Error/ErrorPage";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Lodgings from "./Pages/Lodgings/Lodgings";
 
-function App() {
+export default function App() {
   <>
     <Routes>
       <Route path="/*" element={<ErrorPage />} />
@@ -14,5 +14,3 @@ function App() {
     </Routes>
   </>;
 }
-
-export default App();
