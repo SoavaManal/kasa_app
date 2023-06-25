@@ -1,0 +1,16 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.presentation{
+    background-image: url("../../assets/accueil_img.png");
+    background-color: black;
+    background-position-y: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+.presentation{
+    color: white;
+    text-align: center;
+}

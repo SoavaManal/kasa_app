@@ -1,0 +1,23 @@
+.card{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+}
+.card a{
+    list-style: none;
+    margin:10px
+}
+.card_img{
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+}
+.card_li{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    list-style: none;
+    color:white;
+    font-size: 1.1em;
+}
