@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&display=swap');
 body{
     color: #FF6060;
     margin-left: 150px;
     margin-right: 150px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 a{
     text-decoration: none;
@@ -12,6 +15,8 @@ button{
     border: 1px solid #FF6060;
     margin:10px;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 .right{
     float: right;
@@ -37,4 +42,21 @@ button{
 }
 .slider{
     max-width: 90%;
+}
+.active_star{
+    color:#FF6060
+}
+.noactive_star{
+    color:grey;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    margin: 0;
+    margin-top: 20px;
+}
+.collapse_div{
+    margin-bottom: 15px;
 }
