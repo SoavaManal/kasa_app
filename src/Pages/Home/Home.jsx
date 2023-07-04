@@ -1,6 +1,7 @@
 import Card from "../../Components/Card/Card"
 import lodgings from "../../data/logements.json"
 import "./home.css"
+import img from "../../assets/accueil_img.png"
 
 
 
@@ -9,8 +10,8 @@ export default function Home() {
   return(
     <div>
        <div className="presentation">
-        {/* <img src="../assets/accueil_img.png" alt=""/> */}
-        <h1>Chez nous, partous et ailleurs</h1>
+        <h1>Chez vous, partout et ailleurs</h1>
+        <img src={img} alt=""/>
        </div>
        <div>
         <ul className="cards">

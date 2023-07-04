@@ -1,16 +1,33 @@
 .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    padding-left: 0;
 }
+
 .presentation{
-    background-image: url("../../assets/accueil_img.png");
-    background-color: black;
-    background-position-y: center;
-    padding: 50px;
-    border-radius: 20px;
+    border-radius: 20px; 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
-.presentation{
-    color: white;
+.presentation h1{
+    color:white;
+    padding: 100px;
+    position: relative;
+    z-index: 2;
     text-align: center;
+    background: rgba(0,0,0,0.3);
+    margin: 0;
+}
+.presentation img{
+    position: absolute;
+    left: 0;
+    top: -140px;
+    width: 100%;
+    height: auto;
+    
 }

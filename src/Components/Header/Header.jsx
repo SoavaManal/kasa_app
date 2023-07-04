@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom"
+import k from "../../assets/k.png"
+import group from "../../assets/group.png"
+import s from "../../assets/s.png"
+import a from "../../assets/a.png"
+import "./header.css"
 
 export default function Header() {
 return(
-    <div>
+    <div className="header">
         <div className="logo">
-            <img src="../../assets/k.png" alt=""/>
-            <img src="../../assets/group.png" alt=""/>
-            <img src="../../assets/s.png" alt=""/>
-            <img src="../../assets/a.png" alt=""/>
+            <img src={k} alt=""/>
+            <img src={group} alt=""/>
+            <img src={s} alt=""/>
+            <img src={a} alt=""/>
         </div>
         <ul>
     

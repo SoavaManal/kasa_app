@@ -1,0 +1,40 @@
+body{
+    color: #FF6060;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: #FF6060;
+    color:white;
+    border: 1px solid #FF6060;
+    margin:10px;
+    padding: 10px;
+}
+.right{
+    float: right;
+}
+.left{
+    float:left;
+}
+.profil{
+    border-radius: 50%;
+}
+.tag{
+    list-style: none;
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #FF6060;
+    color: white;
+    font-size: 0.7rem;
+}
+.tags{
+    display: flex;
+}
+.slider{
+    max-width: 90%;
+}
