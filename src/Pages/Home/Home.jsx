@@ -5,7 +5,7 @@ import img from '../../assets/accueil_img.png'
 
 export default function Home() {
     return (
-        <div>
+        <div className='main'>
             <div className="presentation">
                 <h1>Chez vous, partout et ailleurs</h1>
                 <img src={img} alt="" />

@@ -1,9 +1,6 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faChevronLeft,
-    faChevronRight,
-} from '@fortawesome/free-solid-svg-icons'
+import left from "../../assets/left.png"
+import right from "../../assets/right.png"
 import './slider.css'
 
 export default function Slider({ pictures }) {
@@ -17,16 +14,16 @@ export default function Slider({ pictures }) {
     }
     return (
         <div className="slider_div">
-            <button onClick={slideToLeft}>
-                <FontAwesomeIcon icon={faChevronLeft} />
+            <button onClick={slideToLeft} className='leftChevron'>
+                <img src={left} alt="Flèche à gauche" />
             </button>
             <img
                 src={pictures[index]}
                 alt="detail appartement"
                 className="slide"
             />
-            <button onClick={slideToRight}>
-                <FontAwesomeIcon icon={faChevronRight} />
+            <button onClick={slideToRight} className='rightChevron'>
+                <img src={right} alt="Flèche à droite"/>
             </button>
         </div>
     )

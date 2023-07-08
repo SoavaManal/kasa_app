@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@100&display=swap');
 body{
-    color: #FF6060;
+    color: #FF6060; 
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
     margin-left: 150px;
     margin-right: 150px;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+    @media screen and (max-width:880px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 a{
     text-decoration: none;
@@ -17,15 +22,19 @@ button{
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 1.1rem;
 }
-.right{
-    float: right;
-}
-.left{
-    float:left;
+.lodgingInfo{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .profil{
     border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 .tag{
     list-style: none;
@@ -39,15 +48,23 @@ button{
 }
 .tags{
     display: flex;
+    padding-left: 0;
+}
+.tags li{
+    margin-left: 0;
 }
 .slider{
     max-width: 90%;
 }
 .active_star{
-    color:#FF6060
+    color:#FF6060;
+    padding-right: 20px; 
+    font-size: 1.3rem; 
 }
 .noactive_star{
-    color:grey;
+    color:#D3D3D3;
+    padding-right: 20px;
+    font-size: 1.3rem; 
 }
 .footer{
     background-color: black;
@@ -59,4 +76,40 @@ button{
 }
 .collapse_div{
     margin-bottom: 15px;
+    width: 45%;
+}
+.collapse_lodging{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.collapse_div button{
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-left: 0;  
+    width: 100%; 
+}
+.collapse_div p{
+    background-color: #F6F6F6;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.flex h3{
+    width: 30%;
+    font-size: 1rem;
+}
+.list_equipement{
+    list-style: none;
+    background-color: #F6F6F6;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
