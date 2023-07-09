@@ -16,16 +16,17 @@ export default function Collapse({ text, title }) {
                     icon={collapse ? faChevronDown : faChevronUp}
                 />
             </button>
-            {!collapse && (Array.isArray(text) ? (
-                <ul className='list_equipement'>
-                    {' '}
-                    {text.map((t, index) => (
-                        <li key={index}>{t}</li>
-                    ))}
-                </ul>
-            ) : (
-                <p>{text}</p>
-            ))}
+            {!collapse &&
+                (Array.isArray(text) ? (
+                    <ul className="list_equipement">
+                        {' '}
+                        {text.map((t, index) => (
+                            <li key={index}>{t}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>{text}</p>
+                ))}
         </div>
     )
 }

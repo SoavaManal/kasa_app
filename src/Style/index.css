@@ -30,6 +30,11 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:880px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+    }
 }
 .profil{
     border-radius: 50%;
@@ -60,11 +65,17 @@ button{
     color:#FF6060;
     padding-right: 20px; 
     font-size: 1.3rem; 
+    @media screen and (max-width:880px) {
+        padding-right: 5px;;
+    }
 }
 .noactive_star{
     color:#D3D3D3;
     padding-right: 20px;
     font-size: 1.3rem; 
+    @media screen and (max-width:880px) {
+        padding-right: 5px;;
+    }
 }
 .footer{
     background-color: black;
@@ -77,12 +88,22 @@ button{
 .collapse_div{
     margin-bottom: 15px;
     width: 45%;
+    @media screen and (max-width:880px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 95%;
+    }
 }
 .collapse_lodging{
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:880px) {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .collapse_div button{
     border-radius: 5px;
@@ -112,4 +133,14 @@ button{
     margin-top: 0;
     padding-top: 15px;
     padding-bottom: 10px;
+}
+.profileInfo{
+    @media screen and (max-width:880px) {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

@@ -30,7 +30,7 @@ export default function Lodgings() {
                         ))}
                     </ul>
                 </div>
-                <div>
+                <div className='profileInfo'>
                   <div className='flex'>
 
                     <h3>{lodging.host.name}</h3>

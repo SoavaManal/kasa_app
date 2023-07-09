@@ -3,6 +3,10 @@
     position: relative;
     margin-left: 150px;
     margin-right: 150px;
+    @media screen and (max-width:880px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 .slide{
     border-radius: 25px;

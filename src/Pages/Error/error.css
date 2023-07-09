@@ -1,0 +1,24 @@
+.center{
+    text-align: center;
+}
+.center a {
+    color: #FF6060;
+    text-decoration: underline;
+}
+.error_img{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    @media screen and (max-width:880px) {
+        width: 198px;
+        height: 99px;
+    }
+}
+.error_p{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    margin-bottom: 100px;
+    @media screen and (max-width:880px) {
+        font-size: 20px;
+    }
+}
