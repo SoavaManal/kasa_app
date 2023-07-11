@@ -27,7 +27,13 @@ export default function Slider({ pictures }) {
                 alt="detail appartement"
                 className="slide"
             />
-            {pictures.length<=1? "" :<p>{index+1}/{pictures.length}</p>}
+            {pictures.length <= 1 ? (
+                ''
+            ) : (
+                <p>
+                    {index + 1}/{pictures.length}
+                </p>
+            )}
             {pictures.length <= 1 ? (
                 ''
             ) : (

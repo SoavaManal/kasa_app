@@ -108,6 +108,9 @@ button{
 }
 .collapse_lodging div{
     width: 45%;
+    @media screen and (max-width:880px) {
+        width: 100%;
+    }
 }
 .collapse_div button{
     border-radius: 5px;
