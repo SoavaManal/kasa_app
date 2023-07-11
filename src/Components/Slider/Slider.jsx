@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import left from "../../assets/left.png"
-import right from "../../assets/right.png"
+import left from '../../assets/left.png'
+import right from '../../assets/right.png'
 import './slider.css'
 
 export default function Slider({ pictures }) {
@@ -14,17 +14,27 @@ export default function Slider({ pictures }) {
     }
     return (
         <div className="slider_div">
-            <button onClick={slideToLeft} className='leftChevron'>
-                <img src={left} alt="Flèche à gauche" />
-            </button>
+            {pictures.length <= 1 ? (
+                ''
+            ) : (
+                <button onClick={slideToLeft} className="leftChevron">
+                    <img src={left} alt="Flèche à gauche" />
+                </button>
+            )}
+
             <img
                 src={pictures[index]}
                 alt="detail appartement"
                 className="slide"
             />
-            <button onClick={slideToRight} className='rightChevron'>
-                <img src={right} alt="Flèche à droite"/>
-            </button>
+            {pictures.length<=1? "" :<p>{index+1}/{pictures.length}</p>}
+            {pictures.length <= 1 ? (
+                ''
+            ) : (
+                <button onClick={slideToRight} className="rightChevron">
+                    <img src={right} alt="Flèche à droite" />
+                </button>
+            )}
         </div>
     )
 }

@@ -17,7 +17,7 @@
     }
 }
 .collaps_aboutPage{
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   @media screen and (max-width:880px) {
     width: 120%;

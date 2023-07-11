@@ -46,7 +46,7 @@ button{
     margin: 5px;
     padding: 5px 15px 5px 15px;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #FF6060;
     color: white;
     font-size: 0.7rem;
@@ -85,7 +85,7 @@ button{
     margin: 0;
     margin-top: 20px;
 }
-.collapse_div{
+/* .collapse_div{
     margin-bottom: 15px;
     width: 45%;
     @media screen and (max-width:880px) {
@@ -93,7 +93,8 @@ button{
         margin-right: 10px;
         width: 95%;
     }
-}
+} */
+
 .collapse_lodging{
     margin-left: 150px;
     margin-right: 150px;
@@ -104,6 +105,9 @@ button{
         margin-left: 0;
         margin-right: 0;
     }
+}
+.collapse_lodging div{
+    width: 45%;
 }
 .collapse_div button{
     border-radius: 5px;
